@@ -88,12 +88,14 @@ body, html{
 .column-big {
     flex: 66%;
     max-width: 66%;
+    min-width: 3ch;
     padding: 0 4px;
 }
 
 .column-little {
     flex: 33%;
     max-width: 33%;
+    min-width: 3ch;
     padding: 0 4px;
 }
 
