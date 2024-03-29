@@ -44,7 +44,7 @@ body, html{
     padding-right: 0em;
 }
 .container {
-    padding-top: 0.2%; padding-left: 0.1%; padding-right: 0.1%; height: 99%; width: 100%
+    padding-top: 0.1%; padding-left: 0%; padding-right: 0%; height: 99%; width: 100%
 }
 .main-content {
     margin-top: 5%;
@@ -58,7 +58,7 @@ body, html{
     border-radius: 3px; 
     padding-top: 6em;
 }
-.copywrite {
+.copyright {
     padding-left: 40px;
     font-size: 99%;
 }
@@ -79,27 +79,48 @@ body, html{
     padding: 6px;
 }
 .row {
-    height: 94%;
-    /*overflow: hidden;*/
-    margin-bottom: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
-.subrow-top {
-    height: 50%;
-    /* overflow: hidden; */
-    margin-bottom: 0.5%;
+
+/* Create four equal columns that sits next to each other */
+.column-big {
+    flex: 66%;
+    max-width: 66%;
+    padding: 0 4px;
 }
-.subrow-bottom {
-    height: 50%;
-    /* overflow: hidden; */
-    margin-top: 0.5%;
+
+.column-little {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
 }
-.subrow-left {
-    /* width: 66%; */
-    float: left;
-    padding-right: 2px
+
+.column-big img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
-.subrow-right {
-    /* width: 66%; */
-    float: left;
-    padding-left: 2px
+
+.column-little img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
