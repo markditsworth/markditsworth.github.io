@@ -86,16 +86,16 @@ body, html{
 
 /* Create four equal columns that sits next to each other */
 .column-big {
-    flex: 667;
-    max-width: 67%;
-    min-width: 6.9cm;
+    flex: 66%;
+    max-width: 66%;
+    /* min-width: 6.9cm; */
     padding: 0 4px;
 }
 
 .column-little {
     flex: 33%;
     max-width: 33%;
-    min-width: 6.9cm;
+    /* min-width: 6.9cm; */
     padding: 0 4px;
 }
 
@@ -112,17 +112,36 @@ body, html{
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
         max-width: 50%;
     }
-}
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
+@media screen and (max-width: 1000px) {
+    .column-big {
         flex: 100%;
         max-width: 100%;
+        padding: 0 4px;
+    }
+    
+    .column-little {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+    
+    .column-big img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    
+    .column-little img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
     }
 }
