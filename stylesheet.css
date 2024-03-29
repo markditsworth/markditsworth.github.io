@@ -80,22 +80,26 @@ body, html{
 }
 .row {
     height: 94%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin-bottom: 4px;
 }
 .subrow-top {
     height: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 0.5%;
 }
 .subrow-bottom {
     height: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 0.5%;
 }
 .subrow-left {
-    float: left; padding-right: 2px
+    /* width: 66%; */
+    float: left;
+    padding-right: 2px
 }
 .subrow-right {
-    float: left; padding-left: 2px
+    /* width: 66%; */
+    float: left;
+    padding-left: 2px
 }
