@@ -86,16 +86,16 @@ body, html{
 
 /* Create four equal columns that sits next to each other */
 .column-big {
-    flex: 66%;
-    max-width: 66%;
-    min-width: 3ch;
+    flex: 667;
+    max-width: 67%;
+    min-width: 6.9cm;
     padding: 0 4px;
 }
 
 .column-little {
     flex: 33%;
     max-width: 33%;
-    min-width: 3ch;
+    min-width: 6.9cm;
     padding: 0 4px;
 }
 
