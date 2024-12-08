@@ -90,7 +90,7 @@ body, html{
     flex: 66%;
     max-width: 66%;
     /* min-width: 6.9cm; */
-    padding: 0 4px;
+    padding: 0 2px;
 }
 
 .column-little {
