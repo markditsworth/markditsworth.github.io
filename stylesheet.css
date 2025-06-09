@@ -86,6 +86,12 @@ body, html{
 }
 
 /* Create four equal columns that sits next to each other */
+.column-pana {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 2px
+}
+
 .column-big {
     flex: 66%;
     max-width: 66%;
@@ -98,6 +104,12 @@ body, html{
     max-width: 33%;
     /* min-width: 6.9cm; */
     padding: 0 4px;
+}
+
+.column-pana img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .column-big img {
